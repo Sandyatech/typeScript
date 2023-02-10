@@ -1,4 +1,4 @@
-import { endAdventure, haveAdventures } from '../..';
+import { endAdventure, haveAdventures } from '../../index';
 import { askQuestion, clear, print } from '../ui/console';
 
 // ⚠️ This is a very unusual type setup. It's not a great idea in the real world
@@ -48,5 +48,13 @@ export function wakeUp(): void {
 
 function tryToWakeUp(): WakeUp {
 	// 👉 FIXME ❌
-	return {};
+	return {
+		wake: {
+			wake: {
+				wake: {
+					canWake: 'Yes'
+				}
+			}
+		}
+	}
 }

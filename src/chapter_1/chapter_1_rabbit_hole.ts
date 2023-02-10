@@ -1,4 +1,4 @@
-import { endAdventure } from '../..';
+import { endAdventure } from '../../index';
 import { meetTheCheshireCat } from '../chapter_2/chapter_2_cheshire_cat';
 import { clear, print, askQuestion } from '../ui/console';
 import { parseHoleInput } from '../ui/parse_input';
@@ -37,7 +37,7 @@ function chooseHole(input: string) {
 export function enterHole(hole: Hole): void {
 	clear(true);
 
-	// @ts-ignore 👉 FIXME ❌
+	
 	if (hole === 'Rabbit') {
 		return meetTheCheshireCat();
 	} else {
